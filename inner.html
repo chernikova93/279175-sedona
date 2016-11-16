@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">  
+    <link href="css/layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -36,7 +35,8 @@
       
       <main class="container">
           <div class="conditions clearfix">
-                <form action="" method="get">
+              <img src="img/filter background.jpg" width="1200" height="217" alt="">
+              <form action="" method="get">
                   <fieldset class="amenities">
                       <legend>Инфраструктура:</legend>
                       <ul>
@@ -71,22 +71,19 @@
                           </li>
                       </ul>
                   </fieldset>
+                  <fieldset class="price">
+                      <legend>Стоимость в сутки (р):</legend>
+                      <input type="text" name="" value="от">
+                      <input type="text" name="" value="до">
+                      <div class="scale">
+                      <div class="bar">
+                          <div class="more"></div>
+                          <div class="less"></div>
+                      </div>
+                      </div>
+                      <button type="submit" value="Submit">Показать</button>
+                  </fieldset>
               </form>
-                  <div class="price">
-                      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
-      <button class="btn-transparent" type="submit">Показать</button>
-                  </div>
           </div>
           <div class="results clearfix">
               <div class="found">
@@ -97,7 +94,7 @@
                   <span>Сортировка:</span>
                   <ul>
                       <li> 
-                          <a   class="sort-active" href="#">По цене</a>
+                          <a  href="#">По цене</a>
                       </li>
                       <li> 
                           <a  href="#">По типу</a>
@@ -108,8 +105,8 @@
                   </ul>
               </div>
               <div class="triangles"> 
-                  <a class="triangle-btn triangle-btn-up" href="#">Вверх</a>
-		<a class="triangle-btn triangle-btn-down" href="#">Вниз</a>
+                  <span></span>
+                  <span></span>
               </div>
           </div>
           <div class="hotels">    
@@ -119,7 +116,7 @@
                   </div>
                   <div class="description"> 
                   <div class="description-name">
-                      <a href="#"><h2>AMARA RESORT & SPA</h2></a>
+                      <h2>AMARA RESORT & SPA</h2>
                       <span>Гостиница</span>
                       <span>От 3500 р.</span>
                   </div>
@@ -139,7 +136,7 @@
                   </div>
                   <div class="description"> 
                   <div class="description-name"> 
-                      <a href="#"><h2>DESERT QUAIL INN</h2></a>
+                      <h2>DESERT QUAIL INN</h2>
                       <span>Мотель</span>
                       <span>От 2000 р.</span>
                   </div>
@@ -159,14 +156,13 @@
                   </div>
                   <div class="description"> 
                   <div class="description-name"> 
-                      <a href="#"><h2>VILLAS AT POCO DIABLO</h2></a>
+                      <h2>VILLAS AT POCO DIABLO</h2>
                       <span>Апартаменты</span>
                       <span>От 4000 р.</span>
                   </div>
                   <div class="buttons">
                       <a class="more" href="#">Подробнее</a>
                       <a class="book" href="#">Забронировать</a>
-                      
                   </div>
                   </div>
                   <div class="stars">
